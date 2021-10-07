@@ -1,4 +1,4 @@
-ARG DBT_VERSION=0.20.0
+ARG DBT_VERSION=0.20.1
 FROM fishtownanalytics/dbt:${DBT_VERSION}
 RUN apt-get update && apt-get install libsasl2-dev
 

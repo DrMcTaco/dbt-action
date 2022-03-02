@@ -1,6 +1,6 @@
 ARG DBT_VERSION=0.21.0
 FROM fishtownanalytics/dbt:${DBT_VERSION}
-RUN apt-get update && apt-get install libsasl2-dev
+RUN apt-get -y update && apt-get -y install libsasl2-dev
 
 # Need to re-declare the ARG to use its default value defined before the FROM
 ARG DBT_VERSION
